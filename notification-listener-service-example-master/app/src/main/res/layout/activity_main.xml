@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/image_change_explanaton"
+        android:id="@+id/image_change_explanation"
+        android:textColor="@color/white"
+        android:layout_marginTop="18.5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:textAlignment="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/intercepted_notification_logo_container">
+
+        <ImageView
+            android:id="@+id/intercepted_notification_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/notification_logo"
+            android:src="@drawable/notification_logo" />
+
+        <Button
+            android:id="@+id/sync"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="145dp"
+            android:onClick="onClick"
+            android:text="Sync" />
+
+        <Button
+            android:id="@+id/scroll"
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="145dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="-85dp"
+            android:text="Scroll" />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="85dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="145dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="85dp"
+            android:text="Change" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="220dp"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-320dp"
+            android:textColor="@color/white"/>
+
+
+        <SeekBar
+            android:id="@+id/h_seek"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-300dp"
+            android:layout_marginLeft="-50dp"/>
+
+        <SeekBar
+            android:id="@+id/m_seek"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-250dp"
+            android:layout_marginLeft="-50dp"/>
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-275dp"
+            android:layout_marginLeft="70dp"
+            android:onClick="onClick"
+            android:text="Set" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-275dp"
+            android:layout_marginLeft="145dp"
+            android:onClick="onClick"
+            android:text="Reset" />
+
+    </FrameLayout>
+
+</LinearLayout>
