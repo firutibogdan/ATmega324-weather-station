@@ -3,7 +3,7 @@ Weather station implemented using ATmega324 and different sensors
 
 PDF documentation available here:
 
-[Documentation](https://github.com/firutibogdan/ATmega324-weather-station/blob/master/README.pdf)
+[Documentation](https://github.com/firutibogdan/ATmega324-weather-station/blob/master/Documentation_RO.pdf)
 
 Project videos available here:
 
